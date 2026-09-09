@@ -1,0 +1,17 @@
+{
+  "name": "bot-control-panel-backend",
+  "version": "1.0.0",
+  "description": "Backend WebSocket + mineflayer yang menyambungkan Bot Control Panel ke server Minecraft sungguhan",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "mineflayer": "^4.0.0",
+    "ws": "^8.0.0"
+  }
+}
