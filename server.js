@@ -21,7 +21,7 @@ const express = require('express');
 const { WebSocketServer, WebSocket } = require('ws');
 const mineflayer = require('mineflayer');
 
-const PORT = reinhardafk-production.up.railway.app.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 
 const app = express();
 app.use(express.static(path.join(__dirname, 'public')));
@@ -410,5 +410,4 @@ function handleMessage(ws, msg) {
 
 server.listen(PORT, () => {
   log('Bot Control Panel backend jalan di http://localhost:' + PORT);
-});
 });
